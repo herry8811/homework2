@@ -1,0 +1,14 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--Course bean-->
+<bean id = "coffee" class="geektime.demo.Coffee">
+    <constructor-arg value="latte" />
+    <constructor-arg value="30.0" />
+</bean>
+
+<!--Teacher bean-->
+<bean id = "customer" class="geektime.demo.Customer">
+    <constructor-arg ref="coffee" />
+</bean>
+</beans>
